@@ -1,0 +1,743 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+.container {
+  box-shadow: 10px 10px 10px black;
+}
+
+.s_left {
+  position: relative;
+  width: auto;
+  transition: 0.6s;
+  font-family: 'Noto Serif', serif;
+}
+
+.s_left span {
+  position: relative;
+  font-size: 2.5rem;
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+  font-family: 'Grandstander', sans-serif;
+  /* -webkit-animation-play-state: paused; */
+  /*rukrukke chalna*/
+}
+
+@keyframes animate {
+
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+    color: #ff8c00;
+  }
+
+  20% {
+    transform: translateY(-50px);
+    color: #ff8c00;
+  }
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #ff8c00;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255 255 255 / 93%);
+  font-size: 1.2rem;
+}
+
+.bg-dark {
+  background-color: #131417 !important;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+html,
+body {
+  -moz-box-sizing: border-box;
+  /*for morzillafirefox* */
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.s_wrapper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  background: #131417;
+}
+
+.container-fostrap {
+  display: table-cell;
+  padding: 1em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.fostrap-logo {
+  width: 100px;
+  margin-bottom: 15px
+}
+
+h1.heading {
+  color: #fff;
+  font-size: 2.15em;
+  font-weight: 900;
+  margin: 0 0 0.5em;
+}
+
+.s_card {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #1d2124;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0), 0 2px 10px 0 rgb(0 0 0);
+  transition: box-shadow 0.5s;
+}
+
+.s_card:hover {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(0.8);
+}
+
+.s_card:hover .s_card-content .s_card-title a {
+  /* color: rgb(42, 208, 250); */
+  color: #007bff;
+}
+
+.img-card {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  display: block;
+  overflow: hidden;
+}
+
+.img-card img {
+  width: 90%;
+  margin-top: 2px;
+  height: 200px;
+  border-radius: 20px;
+  /* object-fit: cover; */
+  background: #1d2124;
+  transition: all .25s ease;
+}
+
+.s_card-content {
+  padding: 15px;
+  text-align: center;
+  background-color: #1d2124;
+  border: 0px solid #1d2124;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.s_card-title {
+  margin-top: 0px;
+  font-weight: 700;
+  font-size: 1.65em;
+}
+
+.s_card-title a {
+  color: #ff8c00;
+  text-decoration: none !important;
+}
+
+.s_card-read-more {
+  border-top: 1px solid #D4D4D4;
+}
+
+.s_card-read-more a {
+  text-decoration: none !important;
+  padding: 10px;
+  font-weight: 600;
+  text-transform: uppercase
+}
+
+/******************************** ojha bhaiya ki css *******************************/
+.r_container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #131417;
+  position: relative;
+}
+
+.r_row {
+  width: 80%;
+  min-height: 85vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.r_col {
+  margin: 20px 0;
+  flex-basis: 50%;
+  min-width: 300px;
+  height: 100%;
+  position: relative;
+}
+
+.r_text {
+  min-width: 400px;
+  margin-top: 100px;
+  margin-left: 80px;
+}
+
+.r_text h1 {
+  font-size: 53px;
+  font-weight: 100;
+  line-height: 65px;
+  color: white;
+}
+
+/* -----------------------THE CODEHUB logo-------------------------------------------------------------------*/
+.r_text a {
+  position: absolute;
+  color: #FF8C00;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 52px;
+  margin-top: 24px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .5);
+  overflow: hidden;
+}
+
+.r_text a:hover {
+  color: #007bff;
+}
+
+.r_text a:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.r_text a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #FF7F50, #FF8C00);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.r_text a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #FF7F50, #FF8C00);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.r_text a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #FF7F50, #FF8C00);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.r_text a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #FF7F50, #FF8C00);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/*-------------------------------------image gallery with pictures ------------------------------------------*/
+.r_gallery {
+  max-width: 322px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+}
+
+.r_gallery img {
+  width: 100%;
+  border: 7px solid rgb(0, 255, 255, 0.3);
+  border-radius: 20px;
+  /*border:7px solid rgb(255,182,193);*/
+}
+
+.r_gallery ul {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.r_gallery ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: #FF8C00;
+  padding: 0 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.r_gallery ul li::after {
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: transparent;
+  position: absolute;
+  top: 8px;
+  left: -3px;
+}
+
+.r_gallery ul li:hover {
+  transform: scale(1.7);
+  /*box-shadow: 0 5px 25px rgba(0,0,0,.2);*/
+  color: #007bff;
+}
+
+/*-----------------------------------------left icon nav----------------------------------------*/
+.r_social-menu ul {
+  position: absolute;
+  padding: 0 6.5px;
+  margin-top: 170px;
+}
+
+.r_social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.r_social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .7s;
+}
+
+.r_social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+
+.r_social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border: 2.5px solid orange;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.r_social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.r_social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+
+.r_social-menu ul li:nth-child(2) a:hover {
+  background-color: #55acee;
+}
+
+.r_social-menu ul li:nth-child(3) a:hover {
+  background-color: #e4405f;
+}
+
+.r_social-menu ul li:nth-child(4) a:hover {
+  background-color: #3b5999;
+}
+
+/*___________x___________x______________x____ ojha bhaiya ji ki css *_________x__________x_____________***/
+/*_______________________________________++++===== pranjal css ______________________________________======*/
+.p_team_section_div {
+  background-color: #131417;
+  height: 760px;
+}
+
+.p_team_section_div4 {
+  top: 125px;
+}
+
+.p_team_section_image {
+  position: relative;
+  top: -50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 25px 10px #07031a;
+}
+
+.p_team_section_p1 {
+  position: relative;
+  top: 0;
+  font-family: 'Zilla Slab', serif;
+  font-size: 20px;
+}
+
+.p_team_section_a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.p_team_section_a:hover {
+  text-decoration: none;
+  color: #8d93ab;
+}
+
+.p_team_section_h4 {
+  color: #FF8C00;
+  position: relative;
+  top: 50px;
+  font-size: 32px;
+  font-family: 'Patua One', cursive;
+}
+
+.p_team_section_p2 {
+  position: relative;
+  top: 65px;
+  font-size: 12px;
+  color: #8d93ab;
+}
+
+/* FOOTER STARTS HERE */
+.p_footer_section {
+  /* width: 1519.200px; */
+  height: 530.200px;
+  background-color: #131417;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.footer_nav_p {
+  /* width: 1170px; */
+  height: 407.200px;
+  margin: 0 174.600px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* BRAND LOGO */
+/* TOP LINKS */
+.top_links_p {
+  display: flex;
+  width: auto;
+  flex: 0 0 auto;
+  flex-direction: row;
+  position: absolute;
+  left: 415px;
+}
+
+.dt_style {
+  color: #919496;
+  margin: 20px 0;
+}
+
+.dl_style_p {
+  width: 165px;
+  height: 346px;
+  padding: 0 15px;
+}
+
+.dd_a_style_p {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+.dd_a_style_p:hover {
+  color: #FF8C00;
+  transition-duration: 0.5s;
+  text-decoration: none;
+}
+
+/* SOCIAL ICONS */
+.social_icons_p {
+  margin: 0 15px 0 auto;
+  width: 192px;
+  height: 348px;
+}
+
+.footer_ul_p {
+  margin: 20px 0 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  width: 20px
+}
+
+.footer_li_p {
+  margin-right: 10px;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+}
+
+.footer_li_p a {
+  margin-right: 0;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  color: white;
+  font-size: 2rem;
+}
+
+.footer_li_p a:hover {
+  margin-right: 0;
+  display: inline-block;
+  width: 54px;
+  height: 54px;
+  color: #FF8C00;
+  transition-duration: 0.5s;
+}
+
+.social_image_size_p {
+  width: 64px;
+  height: 54px;
+}
+
+/* COUNTRY MAP */
+.country_map_p {
+  margin: 0 15px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#country_flag_p {
+  margin-left: 10px;
+  width: 24px;
+  height: 18px;
+}
+
+#country_anchor_p {
+  padding: 0;
+  font-size: 12px;
+  display: flex;
+  color: #919496;
+}
+
+#country_anchor_p:hover {
+  text-decoration: none;
+  color: #FF8C00;
+  transition-duration: 0.5s;
+}
+
+.bottom_links_p {
+  width: 100%;
+  display: flex;
+}
+
+/* BOTTOM LINKS */
+.bottom_links_ul_p {
+  margin: 0 45px 0 0;
+  padding: 0 0 0 0;
+}
+
+.bottom_links_li_p {
+  margin-right: 24px;
+  padding: 0;
+  display: inline-block;
+}
+
+.bottom_link_a_p {
+  padding: 1em 0;
+  font-size: 12px;
+  color: #919496;
+}
+
+.bottom_link_a_p:hover {
+  text-decoration: none;
+  color: #FF8C00;
+}
+
+.bottom_links_span_p {
+  margin: 0 15px 0 auto;
+  padding: 1em 0;
+  font-size: 12px;
+  color: #919496;
+}
+
+/* CODEHUB LOGO */
+.p_text a {
+  position: absolute;
+  color: #FF8C00;
+  padding-left: 7px;
+  padding-right: 7px;
+  line-height: 65px;
+  margin-top: 30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 70px rgba(0, 0, 0, .5);
+  overflow: hidden;
+  /* top: 1443px; */
+  /* top: 70px; */
+}
+
+.p_text a:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.p_text a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #FF7F50, #FF8C00);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.p_text a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #FF7F50, #FF8C00);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.p_text a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #FF7F50, #FF8C00);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.p_text a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #FF7F50, #FF8C00);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* FOOTER ENDS HERE */
